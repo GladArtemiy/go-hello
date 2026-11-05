@@ -13,7 +13,7 @@ func main() {
 		if attempts < serverReadyAt {
 			fmt.Printf("Попытка %d/%d: статус %d, ждем...\n", attempts, maxRetries, serverStatusBad)
 		} else {
-			flag = true
+			success = true
 			fmt.Printf("Попытка %d/%d: статус %d\n", attempts, maxRetries, serverStatusOk)
 			fmt.Printf("✅ Сервер готов, попыток: %d\n", attempts)
 			break

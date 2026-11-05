@@ -47,4 +47,5 @@ func main() {
 		statusMessege = " - Internal Server Error"
 		fmt.Printf("%s", statusMessege)
 	}
+	fmt.Println()
 }
